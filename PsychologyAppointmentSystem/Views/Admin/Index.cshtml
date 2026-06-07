@@ -1,0 +1,54 @@
+﻿@using DNTPersianUtils.Core
+@model PsychologyAppointmentSystem.Models.AdminDashboardVM
+
+<h2>پنل مدیریت</h2>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card bg-primary text-white p-3">
+            <h4>مشاوران</h4>
+            <h2>@Model.CounselorsCount</h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-success text-white p-3">
+            <h4>مراجعین</h4>
+            <h2>@Model.ClientsCount</h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-danger text-white p-3">
+            <h4>نوبت‌ها</h4>
+            <h2>@Model.AppointmentsCount</h2>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<h4>آخرین نوبت‌ها</h4>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>نام مراجعه‌کننده</th>
+            <th>تاریخ</th>
+            <th>ساعت</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.LastAppointments)
+        {
+            <tr>
+                <td>@item.Client.FirstName @item.Client.LastName</td>
+                <td>@item.AppointmentDate.ToString("yyyy/MM/dd")</td>
+                <td>@item.StartTime</td>
+            </tr>
+        }
+    </tbody>
+</table>

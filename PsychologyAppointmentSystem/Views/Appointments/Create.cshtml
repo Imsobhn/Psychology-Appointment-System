@@ -1,0 +1,65 @@
+﻿@model PsychologyAppointmentSystem.Models.AppointmentVM
+
+<h2>رزرو وقت مشاوره</h2>
+
+<form method="post" asp-action="Create">
+
+    <label>مشاور</label>
+    <select name="CounselorId"
+            asp-items="ViewBag.Counselors"
+            class="form-control">
+    </select>
+
+    <br />
+
+    <label>تاریخ</label>
+    <input type="date"
+           name="Date"
+           class="form-control"
+           value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+
+    <br />
+
+    <button class="btn btn-primary">
+        نمایش ساعات خالی
+    </button>
+
+</form>
+
+@if (Model.AvailableSlots != null && Model.AvailableSlots.Any())
+{
+    <hr />
+
+    <form method="post" asp-action="Confirm">
+
+        <input type="hidden" name="CounselorId" value="@Model.CounselorId" />
+        <input type="hidden" name="Date" value="@Model.Date.ToString("yyyy-MM-dd")" />
+
+        <label>ساعت‌ها</label>
+        <select name="SelectedTime" class="form-control">
+            @foreach (var t in Model.AvailableSlots)
+            {
+                <option value="@t">@t</option>
+            }
+        </select>
+
+        <br />
+
+        <input name="FirstName" class="form-control" placeholder="نام" />
+        <br />
+
+        <input name="LastName" class="form-control" placeholder="نام خانوادگی" />
+        <br />
+
+        <input name="NationalCode" class="form-control" placeholder="کد ملی" />
+        <br />
+
+        <input name="Mobile" class="form-control" placeholder="موبایل" />
+        <br />
+
+        <button class="btn btn-success">
+            ثبت رزرو
+        </button>
+
+    </form>
+}

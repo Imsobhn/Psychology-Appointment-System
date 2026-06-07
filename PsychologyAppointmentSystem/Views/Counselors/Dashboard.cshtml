@@ -1,0 +1,43 @@
+﻿@model List<PsychologyAppointmentSystem.Models.CounselorAppointmentVM>
+@using PsychologyAppointmentSystem.Helpers
+@{
+    var counselor = ViewBag.Counselor;
+}
+
+<h2>داشبورد مشاور</h2>
+<a asp-controller="Appointments"
+   asp-action="Weekly"
+   asp-route-counselorId="@counselor.Id"
+   class="btn btn-success">
+    تقویم هفتگی
+</a>
+<h4>
+    @counselor.FirstName @counselor.LastName
+</h4>
+
+<hr />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>تاریخ</th>
+            <th>ساعت شروع</th>
+            <th>ساعت پایان</th>
+            <th>نام مراجعه‌کننده</th>
+            <th>موبایل</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AppointmentDate.ToString("yyyy/MM/dd")</td>
+                <td>@item.StartTime</td>
+                <td>@item.EndTime</td>
+                <td>@item.ClientName</td>
+                <td>@item.Mobile</td>
+            </tr>
+        }
+    </tbody>
+</table>

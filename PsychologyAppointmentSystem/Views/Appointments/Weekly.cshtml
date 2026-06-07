@@ -1,0 +1,87 @@
+﻿@model PsychologyAppointmentSystem.Models.WeeklyCalendarVM
+
+@{
+    var appointments = Model?.Appointments ?? new List<PsychologyAppointmentSystem.Models.Appointment>();
+
+    string[] weekDays =
+    {
+        "شنبه","یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه"
+    };
+}
+
+<h2>تقویم هفتگی</h2>
+
+<h4>مشاور: @ViewBag.CounselorName</h4>
+
+@if (Model == null)
+{
+    <div class="alert alert-danger">
+        مدل ارسال نشده است ❌
+    </div>
+    return;
+}
+
+@if (!appointments.Any())
+{
+    <div class="alert alert-warning">
+        هیچ نوبتی ثبت نشده
+    </div>
+}
+
+<table class="table table-bordered text-center">
+
+    <thead>
+        <tr>
+            <th>روز</th>
+
+            @for (int h = 8; h < 18; h++)
+            {
+                <th>@h:00</th>
+            }
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @for (int d = 0; d < 7; d++)
+        {
+            var day = DateTime.Today.AddDays(d);
+            var dayName = weekDays[d];
+
+            <tr>
+
+                <td>
+                    <strong>@dayName</strong>
+                    <br />
+                    @day.ToString("yyyy-MM-dd")
+                </td>
+
+                @for (int h = 8; h < 18; h++)
+                {
+                    var time = new TimeSpan(h, 0, 0);
+
+                    var appointment = appointments
+                    .FirstOrDefault(x =>
+                    x.AppointmentDate.Date == day.Date &&
+                    x.StartTime == time);
+
+                    if (appointment != null)
+                    {
+                        <td class="bg-primary text-white">
+                            @(appointment.Client?.FirstName ?? "—")
+                            <br />
+                            @appointment.StartTime
+                        </td>
+                    }
+                    else
+                    {
+                        <td>—</td>
+                    }
+                }
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

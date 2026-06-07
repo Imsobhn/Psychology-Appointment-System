@@ -1,0 +1,90 @@
+﻿@model PsychologyAppointmentSystem.Models.WeeklyCalendarVM
+@using PsychologyAppointmentSystem.Helpers
+
+@{
+    ViewData["Title"] = "تقویم هفتگی";
+}
+
+<h2>تقویم هفتگی</h2>
+<div class="card shadow">
+
+    <div class="card-header">
+        <h2 class="mb-4">
+            برنامه هفتگی مشاور
+        </h2>
+    </div>
+
+    <div class="card-body">
+<table class="table table-bordered text-center align-middle">
+
+    <thead>
+        <tr>
+            <th>روز</th>
+
+            @for (int h = 8; h < 18; h++)
+            {
+                <th>@h:00</th>
+            }
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @for (int d = 0; d < 7; d++)
+        {
+            var day = DateTime.Today.AddDays(d);
+
+            <tr>
+
+                <td>
+                            @day.ToString("yyyy/MM/dd")
+                </td>
+
+                @for (int h = 8; h < 18; h++)
+                {
+                    var time = new TimeSpan(h, 0, 0);
+
+                    var reserved =
+                    Model.Appointments.Any(x =>
+                    x.AppointmentDate.Date == day.Date &&
+                    x.StartTime == time);
+
+                    if (reserved)
+                    {
+                        var appointment = Model.Appointments
+                        .First(x =>
+                        x.AppointmentDate.Date == day.Date &&
+                        x.StartTime == time);
+
+                        <td class="bg-primary text-white">
+
+                            <div>
+                                <strong>
+                                    @appointment.Client.FirstName
+                                </strong>
+                            </div>
+
+                            <div>
+                                @appointment.StartTime
+                            </div>
+
+                        </td>
+                    }
+                    else
+                    {
+                        <td class="bg-light">
+                            ✅
+                        </td>
+                    }
+                }
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+    </div>
+
+</div>

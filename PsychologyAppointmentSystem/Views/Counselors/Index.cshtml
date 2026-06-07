@@ -1,0 +1,38 @@
+﻿@model List<PsychologyAppointmentSystem.Models.Counselor>
+
+<h2>لیست مشاوران</h2>
+
+<a class="btn btn-primary" href="/Counselors/Create">افزودن مشاور</a>
+
+<br />
+<br />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-3">
+
+                <img src="@item.PhotoPath" class="card-img-top" style="height:200px;object-fit:cover;" />
+
+                <div class="card-body">
+                    <h5>@item.FirstName @item.LastName</h5>
+                    <p>@item.Specialty</p>
+                    <a class="btn btn-info"
+                       href="/Counselors/Dashboard/@item.Id">
+                        داشبورد
+                    </a>
+                    <a class="btn btn-primary"
+                       href="/Appointments/Create?counselorId=@item.Id">
+                        رزرو وقت
+                    </a>
+                    <a class="btn btn-danger btn-sm"
+                       href="/Counselors/Delete/@item.Id">
+                        حذف
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    }
+</div>

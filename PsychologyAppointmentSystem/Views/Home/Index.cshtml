@@ -1,8 +1,147 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "سیستم نوبت‌دهی روانشناسی";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center py-5">
+
+    <h1 class="display-4 fw-bold text-primary">
+        🧠 سیستم نوبت‌دهی روانشناسی
+    </h1>
+
+    <p class="lead mt-3">
+        مدیریت مشاوران، مراجعین و رزرو جلسات مشاوره به صورت آنلاین
+    </p>
+
+    <div class="mt-4">
+
+        <a asp-controller="Counselors"
+           asp-action="Index"
+           class="btn btn-primary btn-lg m-2">
+            مشاهده مشاوران
+        </a>
+
+        <a asp-controller="Appointments"
+           asp-action="Create"
+           class="btn btn-success btn-lg m-2">
+            رزرو وقت مشاوره
+        </a>
+
+    </div>
+
+</div>
+
+<hr class="my-5" />
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+
+            <div class="card-body text-center">
+
+                <h3>👨‍⚕️ مشاوران</h3>
+
+                <p class="mt-3">
+                    مدیریت اطلاعات مشاوران، تخصص‌ها و برنامه کاری.
+                </p>
+
+                <a asp-controller="Counselors"
+                   asp-action="Index"
+                   class="btn btn-outline-primary">
+                    ورود
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+
+            <div class="card-body text-center">
+
+                <h3>📅 رزرو نوبت</h3>
+
+                <p class="mt-3">
+                    مشاهده ساعات خالی و ثبت سریع نوبت برای مراجعه‌کنندگان.
+                </p>
+
+                <a asp-controller="Appointments"
+                   asp-action="Create"
+                   class="btn btn-outline-success">
+                    رزرو
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+
+            <div class="card-body text-center">
+
+                <h3>⚙️ مدیریت</h3>
+
+                <p class="mt-3">
+                    مشاهده گزارش‌ها و مدیریت اطلاعات سیستم.
+                </p>
+
+                <a asp-controller="Admin"
+                   asp-action="Index"
+                   class="btn btn-outline-dark">
+                    پنل مدیریت
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<hr class="my-5" />
+
+<div class="row text-center">
+
+    <div class="col-md-3">
+        <div class="p-4 bg-light rounded shadow-sm">
+            <h2>📋</h2>
+            <h5>مدیریت مراجعین</h5>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="p-4 bg-light rounded shadow-sm">
+            <h2>🕒</h2>
+            <h5>زمان‌بندی جلسات</h5>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="p-4 bg-light rounded shadow-sm">
+            <h2>📊</h2>
+            <h5>گزارش‌گیری</h5>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="p-4 bg-light rounded shadow-sm">
+            <h2>🔒</h2>
+            <h5>ثبت امن اطلاعات</h5>
+        </div>
+    </div>
+
+</div>
+
+<div class="text-center mt-5">
+
+    <h4>پروژه درس طراحی و تحلیل سیستم‌ها</h4>
+
+    <p class="text-muted">
+        سیستم مدیریت جلسات و نوبت‌دهی روانشناسی
+    </p>
+
 </div>

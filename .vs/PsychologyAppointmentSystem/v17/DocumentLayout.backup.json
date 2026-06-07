@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\views\\counselors\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\views\\counselors\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\views\\appointments\\weekly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\views\\appointments\\weekly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\views\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\views\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|d:\\uni\\project\\psychologyappointmentsystem\\psychologyappointmentsystem\\psychologyappointmentsystem\\models\\appointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E949FC4-94CF-44EF-8A6C-E209BA9AA5AD}|PsychologyAppointmentSystem\\PsychologyAppointmentSystem.csproj|solutionrelative:psychologyappointmentsystem\\models\\appointmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAowHgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T20:28:34.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Weekly.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Appointments\\Weekly.cshtml",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Views\\Appointments\\Weekly.cshtml",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Appointments\\Weekly.cshtml",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Views\\Appointments\\Weekly.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T20:01:11.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Counselors\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Views\\Counselors\\Dashboard.cshtml",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Counselors\\Dashboard.cshtml",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Views\\Counselors\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T19:54:27.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Program.cs",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Program.cs",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Program.cs",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:33:33.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentVM.cs",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Models\\AppointmentVM.cs",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Models\\AppointmentVM.cs",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Models\\AppointmentVM.cs",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Models\\AppointmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T19:10:16.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T16:14:38.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T15:54:12.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Appointments\\Create.cshtml",
+              "RelativeDocumentMoniker": "PsychologyAppointmentSystem\\Views\\Appointments\\Create.cshtml",
+              "ToolTip": "D:\\Uni\\Project\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\PsychologyAppointmentSystem\\Views\\Appointments\\Create.cshtml",
+              "RelativeToolTip": "PsychologyAppointmentSystem\\Views\\Appointments\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T15:48:23.304Z"
             }
           ]
         }

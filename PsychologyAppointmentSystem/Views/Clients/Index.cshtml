@@ -1,0 +1,26 @@
+﻿@model List<PsychologyAppointmentSystem.Models.Client>
+
+<h2>لیست مراجعین</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>نام</th>
+            <th>نام خانوادگی</th>
+            <th>کد ملی</th>
+            <th>موبایل</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.NationalCode</td>
+                <td>@item.Mobile</td>
+            </tr>
+        }
+    </tbody>
+</table>
