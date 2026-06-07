@@ -79,6 +79,6 @@ git clone https://github.com/USERNAME/PsychologyAppointmentSystem.git
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Sobhan Ghasemloo
 
 University Project – Psychology Appointment System
